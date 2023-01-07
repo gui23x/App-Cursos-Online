@@ -18,6 +18,14 @@
     color: white;
     font-size: 50px;
     margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.titulo2 {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.411);
+    font-size: 50px;
+    margin-bottom: 35px;
 }
 
 .conteudobotao {
