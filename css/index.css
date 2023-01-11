@@ -1,81 +1,85 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #211d1d;
-    font-family: "Robot", sans-serif;
-  }
-  
-  .wrap {
-    display: flex;
-    height: 100vh;
-    margin: 0 auto;
-    max-width: 840px;
-  }
-  
-  .container {
-    background-repeat: no-repeat;
-  }
-  
-  .landscape-1 {
-    background-image: url("http://co0kie.github.io/codepen/mindful/landscape.jpg");
-    background-size: 1100px;
-    background-position: -650px -88px;
-    background-color: #0C132F;
-  }
-  
-  
-  .top {
-    margin: 110px 40px 0;
-    color: white;
-  }
-  .top [type=checkbox] {
-    display: none;
-  }
-  
-  .top [type=checkbox]:checked ~ .switch {
-    background-color: #0091ca;
-  }
-  .top [type=checkbox]:checked ~ .switch::before {
-    content: "";
-    background-color: #fff;
-    left: 31px;
-  }
-  
-  .title {
-    margin-bottom: 10px;
-    font-weight: 400;
-    font-size: 32px;
-  }
-  
-  .navigation {
-    background-color: #19234D;
-    padding: 20px 0;
-    border-radius: 20px 20px 0px 0px;
-    margin: 40px 0px;
-    top: 65%;
-    position: relative;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-  }
-  .navigation > a > img {
-    width: 36px;
-    transition: 200ms;
-  }
-  .navigation > a:hover > img {
-    filter: invert(0.6) sepia(1) hue-rotate(350deg) saturate(9);
-  }
-  .light .navigation {
-    background-color: #163026;
-  }
-  .light .navigation > a:hover > img {
-    filter: invert(0.6) sepia(1) hue-rotate(370deg) saturate(200);
-  }
-  
+body {
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100%;
+  left: -10px;
+  position: relative;
+  top: -10px;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.wrap {
+
+  backdrop-filter: blur(50px);
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
+}
+
+.landscape-1 {
+  backdrop-filter: blur(50px);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(to right bottom,
+      rgba(118, 255, 191, 0.925),
+      rgba(25, 225, 252, 0.767));
+
+}
+
+
+.top {
+  color: white;
+}
+
+.top [type=checkbox] {
+  display: none;
+}
+
+.top [type=checkbox]:checked~.switch {
+  background-color: #0091ca;
+}
+
+.top [type=checkbox]:checked~.switch::before {
+  content: "";
+  background-color: #fff;
+  left: 31px;
+}
+
+.title {
+  color: #426696;
+  font-weight: 600;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+
+.icone {
+  color: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  top: 10px;
+}
+
+
+.navigation {
+  background-color: transparent;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  padding: 20px;
+  border-radius: 40px;
+  top: 10%;
+  position: relative;
+  display: flex;
+  width: 80%;
+  height: 45px;
+  justify-content: space-around;
+  backdrop-filter: blur(10px);
+}
+
